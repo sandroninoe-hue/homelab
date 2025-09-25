@@ -98,7 +98,8 @@ ping 10.0.0.1
   # Generar clave privada
   wg genkey | tee privatekey | wg pubkey > publickey
   ```
-
+- **Dispositivos moviles**: Crea el archivo de confguración en la computadora, exporta la configuración, comparte ese archivo a tu movil e importa la configuracion desde allí. Es la forma mas eficaz de hacerlo, las claves no necesariamente deben ser creadas en el dispositivo de uso, esa es la razon por la cual la exportación e importación de tuneles funciona.
+- **Actualizaciones**: Tras cada actualizacion en el archivo wg0.conf es necesario un reiniciar el servicio, la forma recomendad es con up/down, mostrado anteriormente.
 ---
 
 ## 🔍 Solución de problemas
